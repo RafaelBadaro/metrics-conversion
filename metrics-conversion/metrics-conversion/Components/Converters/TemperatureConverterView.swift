@@ -13,8 +13,6 @@ struct TemperatureConverterView: View {
     @State private var isFahrenheitFieldFocused = false
     @State private var isCelciusFieldFocused = false
     
-    
-    
     var body: some View {
         
         VStack {
@@ -48,6 +46,7 @@ struct TemperatureConverterView: View {
                 }
         }
         .padding()
+        
     }
     
     func setFocusFahrenheit(focused: Bool) {
@@ -57,9 +56,6 @@ struct TemperatureConverterView: View {
     func setFocusCelcius(focused: Bool) {
         isCelciusFieldFocused = focused
     }
-    
-    
-    
 }
 
 struct TemperatureConverterView_Previews: PreviewProvider {
